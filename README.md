@@ -20,7 +20,7 @@ In this tutorial, I will be demonstrating how to build two containers. One for W
 # 2) Running the Docker Compose File:
 -------------------
 
-- let's also pull the image of MongoDB-Express from DockerHub:
+- let's deploy our docker compose file to run the containers:
 
       docker-compose -f  wordpress-services.yaml up
 
@@ -36,3 +36,14 @@ In this tutorial, I will be demonstrating how to build two containers. One for W
 
 ![image](https://github.com/WaseemCloud/MongoDB-On-Docker/assets/157589909/095a1607-79b1-4020-bbd3-144c3969cd16)
 
+
+-------------------
+# 4) Access Wordpress:
+-------------------
+
+- Access your running Webpress container through the following link:
+
+      http://localhost:8080/
+
+
+![image](https://github.com/WaseemCloud/Wordpress-using-Docker-Compose/assets/157589909/37dbb37c-279c-415a-be99-925a5070bc2e)
