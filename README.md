@@ -47,3 +47,11 @@ In this tutorial, I will be demonstrating how to build two containers. One for W
 
 
 ![image](https://github.com/WaseemCloud/Wordpress-using-Docker-Compose/assets/157589909/37dbb37c-279c-415a-be99-925a5070bc2e)
+
+-------------------
+# 5) Delete Containers:
+-------------------
+
+- To destroy the recent build, also use the docker compose file that you have:
+
+      docker-compose -f  wordpress-services.yaml down
