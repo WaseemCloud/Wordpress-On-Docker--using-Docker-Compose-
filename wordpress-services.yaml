@@ -20,4 +20,4 @@ services:
 networks:
   wordpress_network:
     driver: bridge
-h
+
