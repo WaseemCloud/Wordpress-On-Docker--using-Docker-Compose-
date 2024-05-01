@@ -1,0 +1,22 @@
+version: "3.1"
+services:
+  wordpress:
+    image: wordpress
+    ports:
+      - 8080:80
+    networks:
+      - wordpress_network
+    environment:
+      WORDPRESS_DB_HOST: wordpress_db
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: password
+  wordpress_db:
+    image: mysql
+    networks:
+      - wordpress_network
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: wordpress
+networks:
+  wordpress_network:
+    driver: bridge
